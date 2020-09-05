@@ -1,0 +1,149 @@
+ul {
+  padding: 10px;
+  list-style: none;
+  background: lightblue;
+  text-align: right;
+  
+
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: center;
+  
+}
+
+ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: black;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #fff;
+  background: lightgreen;
+}
+
+ul li ul.dropdown {
+  min-width: 100%;
+  /* Set width of the dropdown */
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+  background: lightblue;
+  /* Display the dropdown */
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+header {
+  color: black;
+}
+
+main {
+  color: black;
+}
+
+footer {
+  color: black;
+  text-align: center;
+}
+
+/* Mason's edits */
+h2 { background: lightblue;
+	  text-align: left;
+	  color: black;
+	  padding: 14px 16px;
+	
+}
+
+nav {background: white;
+	 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+
+}
+
+.left {
+  width: 50%;
+  background-color: lightblue;
+  height: 400px; /* used to keep left and right columns at same height */
+  opacity: 0.949;
+  filter: alpha(opacity=50);
+  border:solid;
+  border-radius: 12px;
+
+	
+}
+
+/* Used to create the alternating color pattern for images and text boxes. 
+Without this, the opacity is too light on the left column image when ".right" is used instead. */
+.leftAlternate {
+  width: 50%;
+  background-color: lightgreen;
+  height: 400px; /* used to keep left and right columns at same height */
+  opacity: 0.949;
+  filter: alpha(opacity=50);
+  border:solid;
+  border-radius: 12px;
+
+	
+}
+
+img {opacity: 1;
+     border-radius: 5px;}
+
+.right {
+  width: 50%;
+  background-color: lightgreen;
+  height: 400px; /* used to keep left and right columns at same height */
+  opacity: 0.9;
+  filter: alpha(opacity=50);
+  border:solid;
+  border-radius: 12px;
+
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* encases entire page. responsible for centering and keeping margins */		  
+div.content {width: 1500px; /*width of entire page*/
+			 margin: auto;	/*centers website*/
+}
+
+/* text that goes along with beach pictures */
+p.description {font-size: large;
+				padding: 50px 0px 0px; /* padding used to center text with correspinding beach image */
+				}
+
+/* Contains background image and background image settings */				
+body {
+    background-image: url("Beach_sunset.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

@@ -1,0 +1,246 @@
+ul {
+  padding: 10px;
+  list-style: none;
+  background: lightblue;
+  text-align: right;
+
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: center;
+}
+
+ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: black;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #fff;
+  background: lightgreen;
+}
+
+ul li ul.dropdown {
+  min-width: 100%;
+  /* Set width of the dropdown */
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+  background: lightblue;
+  /* Display the dropdown */
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+header {
+  color: black;
+}
+
+main {
+  color: black;
+}
+
+footer {
+  color: black;
+  text-align: center;
+}
+
+/* Mason's edits */
+h2 { background: lightblue;
+	  text-align: left;
+	  color: black;
+	  padding: 14px 16px;
+	
+}
+
+nav {background: white;}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+
+}
+
+.columncenter {
+	margin:auto;
+    
+    padding: 10px;
+	background-color: lightblue;
+	height: 800px;
+	opacity: .949;
+   
+}
+
+.left {
+  width: 40%;
+  background-color: lightblue;
+  height: 520px; /* used to keep left and right columns at same height */
+  opacity: 0.949;
+  filter: alpha(opacity=50);
+  border:solid;
+  border-radius: 12px;
+}
+
+.right {
+  width: 60%;
+  background-color: lightgreen;
+  height: 520px; /* used to keep left and right columns at same height */
+  opacity: 0.9;
+  filter: alpha(opacity=50);
+  border:solid;
+  border-radius: 12px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {opacity: 1;
+     border-radius: 5px;}
+
+/* Text box settings */
+.textbox {width: 880px; /* text box width*/}
+
+/* encases entire page. responsible for centering and keeping margins */		  
+div.content {width: 1500px; /*width of entire page*/
+			 margin: auto;	/*centers website*/
+}
+
+/* Contains background image and background image settings */				
+body {
+    background-image: url("oahu.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+input.MyButton
+{width: 300px;
+padding: 20px;
+font-weight: bold;
+font-size: 150%;
+color: #fff;
+border-radius: 10px;
+}
+	
+input.MyButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
